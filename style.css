@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+ padding: 30px 145px;
+ font-family:'Inter', sans-serif; 
+ font-size: 15px;
+}
+
+p{
+  color:  hsl(236, 13%, 42%);
+  line-height: 22px;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: hsl(236, 13%, 42%);
+ }
+
+.container-nav, .container-header, .header, .container-section, .nav, .logo, .box, .hero, .right-header{
+  display: flex;
+}
+
+.mobile, .icon{
+  display: none;
+}
+
+.container-nav{
+  justify-content: space-between;
+}
+
+.nav{
+  width: 500px;
+  justify-content: space-between;
+  list-style-type: none;
+  color:  hsl(236, 13%, 42%);
+}
+
+.container-header{
+  margin-top: 30px;
+}
+
+.hero{
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+}
+
+.h1{
+  line-height: 50px;
+  font-size: 50px;
+  width: 300px;
+  font-weight: 900; 
+}
+
+.paragraph{
+ width: 320px;
+}
+
+button{
+  margin-top: 25px;
+  color:  hsl(36, 100%, 99%);
+  border: none;
+  background-color:  hsl(5, 85%, 63%);
+  text-transform: uppercase;
+  padding: 12px 29px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.right-header{
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: hsl(240, 100%, 5%);
+  height: 437px;
+  padding: 20px 10px;
+  margin-left: 30px;
+}
+
+.right{
+  color: hsl(233, 8%, 79%);
+  padding :10px 0px;
+}
+
+.container-section{
+  justify-content: space-between;
+}
+
+.box{
+  margin-top: 60px;
+  width: 320px;
+}
+
+.writeup{
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 28px;
+  height:100px; 
+}
+
+.num{
+  color: hsl(233, 8%, 79%);
+  font-size: 30px;
+}
+
+
+@media(max-width:500px){
+  body{
+    padding:28px 25px;
+  }
+ .nav, .desktop{
+  display: none;
+ }
+ .mobile, .container-header, .header .box, .hero, .right-header,.right, .container-section{
+  display: block;
+ }
+
+ .container-nav, .icon {
+  display: flex;
+ }
+
+ .hero{
+  width: 440px;
+ }
+
+ .h1{
+  font-size: 40px;
+  width: 350px;
+  font-weight: 900;
+ }
+
+ .paragraph{
+  width: 450px;
+ }
+ 
+ .right-header{
+  margin-left: 0px;
+  margin-top: 50px;
+  flex-direction: column;
+  height: 437px;
+  padding:20px 25px;
+ }
+
+ .right{
+  padding :25px 0px;
+ }
+
+.box{
+  margin-top: 60px;
+  width: 420px;
+}
+}
