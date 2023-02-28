@@ -50,6 +50,7 @@ button{
 
 .container-nav{
   justify-content: space-between;
+  min-width: 420px;
 }
 
 .nav{
