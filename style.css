@@ -33,7 +33,7 @@ button{
   letter-spacing: 2.5px;
 }
 /* SIDENAV STYLES */
- .side-nav div, .side-nav, .side-nav li, #hamburgerMenu{
+ .side-nav div, #sideNav, .side-nav, .side-nav li, #hamburgerMenu{
   display: none;
  }
 
@@ -60,6 +60,11 @@ button{
 }
 
 /* HEADER STYLES */
+.desktop{
+  width: 100%;
+
+}
+/* width="680px" height="260px" class="desktop" */
 
 .container-header{
   margin-top: 30px;
@@ -72,6 +77,7 @@ button{
 .hero{
   justify-content: space-between;
   margin: 20px 0 0 0;
+  width:100%;
 }
 
 .h1{
@@ -86,12 +92,19 @@ button{
 }
 
 .right-header{
-  justify-content: space-between;
+  /* justify-content: space-between;
   flex-direction: column;
-  background-color: hsl(240, 100%, 5%);
-  height: 437px;
+  hei
+  437
+ 
   padding: 20px 10px;
-  margin-left: 30px;
+  margin-left: 30px; */
+  max-height: 737px;
+  margin-left: 20px;
+  background-color: hsl(240, 100%, 5%);
+  margin-top: 0px;
+  flex-direction: column;
+  padding:20px 25px;
 }
 
 .right{
@@ -121,10 +134,11 @@ button{
   color: hsl(233, 8%, 79%);
   font-size: 30px;
 }
+
  
 /* MOBILE VIEW STYLES */
 
-@media(max-width:500px){
+@media(max-width:750px){
   body{
     margin:28px 25px;
   }
@@ -175,7 +189,7 @@ button{
  }
 
  /* HEADER STYLES MOBILE */
-
+ 
  .hero{
    width: 440px;
  }
